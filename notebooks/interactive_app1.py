@@ -9,7 +9,7 @@ url = "https://raw.githubusercontent.com/saswatnayak1998/lyft_DE/working/noteboo
 @st.cache_data
 def load_data():
     data = pd.read_csv(url)
-    data = data[:20000]
+    data = data[:5000]
     # Convert dates to datetime if needed
     # data['date_column'] = pd.to_datetime(data['date_column'])
     return data
