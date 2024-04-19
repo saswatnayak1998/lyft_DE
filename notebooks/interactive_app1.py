@@ -5,9 +5,10 @@ import pydeck as pdk
 
 # Load and prepare data
 st.title('Lyft Data Analytics NYC')
+url = "https://raw.githubusercontent.com/saswatnayak1998/lyft_DE/working/notebooks/data/cab_data.csv"
 @st.cache_data
 def load_data():
-    data = pd.read_csv('data/cab_data.csv')
+    data = pd.read_csv(url)
     data = data[:10000]
     # Convert dates to datetime if needed
     # data['date_column'] = pd.to_datetime(data['date_column'])
