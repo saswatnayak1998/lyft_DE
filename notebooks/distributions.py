@@ -4,7 +4,6 @@ import numpy as np
 import warnings
 import altair as alt
 from scipy import stats
-import traceback
 from scipy.stats import kstest
 
 
