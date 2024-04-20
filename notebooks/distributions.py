@@ -102,7 +102,7 @@ def plot_density_with_best_fit(data, best_distribution, best_params):
 
 
 
-st.title('Probability Distribution Fitter')
+st.title('Probability Distribution Fitter- Saswat K Nayak')
 uploaded_file = st.file_uploader("Upload your data file", type=['dat'])
 options = list(distributions.keys())
 selected_distributions = st.multiselect('Select distributions to fit', options, default=options)
