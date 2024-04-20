@@ -7,6 +7,8 @@ from scipy import stats
 import traceback
 from scipy.stats import kstest
 
+
+
 def best_fit_distribution(data, selected_distributions, distributions, bins=500, ax=None):
     """Model data by finding best fit distribution to data"""
     # Get histogram of original data
@@ -214,7 +216,7 @@ def plot_example_data(data):
 
 
 # Example data and plot button
-st.subheader("Some examples of probability distributions")
+st.subheader("Some common distributions")
 example_data = generate_example_data()
 plot_example_data(example_data)
 
