@@ -1,2 +1,2 @@
-statsmodels @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_6ceh3qgte0/croot/statsmodels_1689937269297/workfile
-scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1696467663366/work/dist/scipy-1.11.3-cp39-cp39-macosx_10_9_x86_64.whl#sha256=009261ee3610b28be6fecf26d7cdbc5494f01f36201052b50424bd2b7eeddca6
+statsmodels 
+scipy
