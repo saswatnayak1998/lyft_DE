@@ -135,7 +135,8 @@ if uploaded_file is not None:
         st.error(f"An error occurred: {e}")
 else:
     st.subheader("It selects the best probability distribution function for the given data as in the example below.")
-    data = pd.read_csv("/Users/habibi/uber_pipeline/orders_data.dat", sep=',', header=None).dropna()
+    url = "https://raw.githubusercontent.com/saswatnayak1998/lyft_DE/working/notebooks/data/orders_data.dat"
+    data = pd.read_csv(url, sep=',', header=None).dropna()
     data = data.apply(pd.to_numeric, errors='coerce').dropna()
     # Iterate over columns and perform analysis
     for column in data.columns:
