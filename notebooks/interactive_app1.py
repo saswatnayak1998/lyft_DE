@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import pydeck as pdk
 
-# Load and prepare data
+
 st.title('Lyft Data Analytics NYC by Saswat K Nayak')
 url = "https://raw.githubusercontent.com/saswatnayak1998/lyft_DE/working/notebooks/data/cab_data.csv"
 @st.cache_data
@@ -80,7 +80,7 @@ st.pydeck_chart(pdk.Deck(
 filtered_data['payment_type_name'] = filtered_data['payment_type'].map(payment_type_mapping)
 
 # Aggregate fare amounts by payment type
-fare_amounts_by_type = filtered_data.groupby('payment_type_name')['fare_amount'].mean()  # or sum(), depending on the desired metric
+fare_amounts_by_type = filtered_data.groupby('payment_type_name')['fare_amount'].mean() 
 
 # Plotting
 st.header("Average Fare Amount by Payment Type")
